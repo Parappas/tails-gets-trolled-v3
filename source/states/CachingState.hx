@@ -1,5 +1,5 @@
 package states;
-#if sys
+#if windows
 import flixel.addons.ui.FlxUIState;
 import flixel.FlxState;
 import sys.thread.Thread;
