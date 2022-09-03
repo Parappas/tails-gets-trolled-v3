@@ -47,17 +47,17 @@ class EngineData {
     new WeekData("Tails Gets Trolled",
       1,
       "tails",
-      ["Talentless Fox"]
+      ["Talentless-Fox"-
     ),
     new WeekData("Dumbass Learns",
       2,
       "sonic",
-      ["No Villains"]
+      ["No-Villains"]
     ),
     new WeekData("Shadow Showdown",
       3,
       "shadow",
-      ["Die Batsards","High Shovel","Taste For Blood"]
+      ["Die-Batsards","High-Shovel","Taste-For-Blood"]
     )
   ];
 }
