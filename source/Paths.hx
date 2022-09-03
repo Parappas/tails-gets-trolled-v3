@@ -60,7 +60,7 @@ class Paths
 	public static function getDirs(library:String,?base='assets/images'){
 		var folders:Array<String>=[];
 		// TODO: openflassets shit maybe?
-		for(folder in FileSystem.readDirectory('${base}/${library}') ){
+		for(folder in FileSystem.readDirectory(SUtil.getPath() '${base}/${library}') ){
 			if(!folder.contains(".") && FileSystem.isDirectory('${base}/${library}/${folder}')){
 				folders.push(folder);
 			}
