@@ -82,7 +82,7 @@ class OptionsState extends MusicBeatState
 				new ToggleOption("onlyScore","Minimal Information","Only shows your score below the hp bar"),
 				new ToggleOption("smoothHPBar","Smooth Healthbar","Makes the HP Bar smoother"),
 				new ToggleOption("fcBasedComboColor","FC Combo Colouring","Makes the combo's colour changes with type of FC you have"),
-				new NoteskinOption("noteSkin","NoteSkin","The noteskin to use"),
+				//new NoteskinOption("noteSkin","NoteSkin","The noteskin to use"),
 				new OptionCategory("Effects",[
 					new ToggleOption("ruinMod","Ruin the mod","Ruins the mod.")
 				]),
