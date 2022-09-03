@@ -155,8 +155,10 @@ class InitState extends FlxUIState {
 
     //characters
     var nextState:FlxUIState = new TitleState();
-    if(currentOptions.shouldCache && canCache){
+    if(currentOptions.shouldCache && canCache)  
+           #if windows
       nextState = new CachingState(nextState);
+	    #end
     }else{
       initTransition();
       transIn = FlxTransitionableState.defaultTransIn;
