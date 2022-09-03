@@ -23,6 +23,7 @@ import haxe.Json;
 import sys.io.File;
 import openfl.media.Sound;
 import ui.*;
+import openfl.utils.Assets as OpenFlAssets;
 #if cpp
 import Sys;
 import sys.FileSystem;
@@ -320,8 +321,8 @@ class FreeplayState extends MusicBeatState
 		songNames.push(songData.chartName.toLowerCase());
 		songs.push(songData);
 		var songDiffs:Array<Int> = [];
-		if(FileSystem.isDirectory('assets/songs/${songData.chartName.toLowerCase()}') ){
-			for (file in FileSystem.readDirectory('assets/songs/${songData.chartName.toLowerCase()}'))
+		if(OpenFlAssets.isDirectory('assets/songs/${songData.chartName.toLowerCase()}') ){
+			for (file in OpenFlAssets.readDirectory('assets/songs/${songData.chartName.toLowerCase()}'))
 			{
 				if(file.endsWith(".json") && !FileSystem.isDirectory(file)){
 					var difficultyName = file.replace(".json","").replace(songData.chartName.toLowerCase(),"");
@@ -491,7 +492,7 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		var createThread=false;
-		#if sys
+		#if windows
 			createThread=true;
 		#end
 		/*if(OptionUtils.options.freeplayPreview){
